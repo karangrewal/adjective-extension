@@ -2,7 +2,7 @@ This repository contains analyses and data from the following work:
 
 Grewal, K. and Xu, Y. (to appear) Chaining and historical adjective extension. In *Proceedings of the 42nd Annual Meeting of the Cognitive Science Society*.
 
-## 1. Adjective-noun cooccurrence data
+### 1. Adjective-noun cooccurrence data
 
 The `data/` folder contains all historical adjective-noun cooccurrence counts grouped by decade, as well as adjectives and nouns used in our experiments. The following python code (executed from the `scripts/` folder) prints the raw co-occurrence count between "artificial" and "computer" during the 1980s.
 
@@ -29,7 +29,7 @@ i, j = nouns_t.index('computer'), adjectives.index('artificial')
 print(C[1, i, j])
 ```
 
-## 2. Predictive models
+### 2. Predictive models
 
 The `scripts/` folder contains the exemplar, prototype, progenitor, k-nearest neighbors, and baseline models. One of these models can be executed as
 
