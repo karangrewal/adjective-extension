@@ -1,3 +1,7 @@
+This repository contains analyses and data from the following work:
+
+Grewal, K. and Xu, Y. (to appear) Chaining and historical adjective extension. In *Proceedings of the 42nd Annual Meeting of the Cognitive Science Society*.
+
 ## 1. Adjective-noun cooccurrence data
 
 The `data/` folder contains all historical adjective-noun cooccurrence counts grouped by decade, as well as adjectives and nouns used in our experiments. The following python code (executed from the `scripts/` folder) prints the raw co-occurrence count between "artificial" and "computer" during the 1980s.
@@ -30,7 +34,7 @@ print(C[1, i, j])
 The `scripts/` folder contains the exemplar, prototype, progenitor, k-nearest neighbors, and baseline models. One of these models can be executed as
 
 ```bash
-$ scripts/exemplar.py --frq200 --precision
+$ python scripts/exemplar.py --frq200 --precision
 ```
 
 where `--frq200` specified the "FRQ-200" adjective set, and `--precision` specifies we want to evaluate models based on predictive accuracy. Instead, you can use `--jsd` to specify the Jensen-Shannon divergence between the predicted and empirical posterior distributions over adjectives. In addition, the options `--future` and `--map` can be used to consider all future pairings when evaluating models and to use kernel parameters learned via MAP estimates, respectively.
