@@ -1,0 +1,1 @@
+Diachronic Word2Vec embeddings from Hamilton et al. (2016) should be downloaded and their .pkl and .npy files should be placed in this folder. They can be found [here](https://nlp.stanford.edu/projects/histwords/).

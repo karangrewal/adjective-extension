@@ -39,4 +39,4 @@ $ python scripts/exemplar.py --frq200 --precision
 
 where `--frq200` specified the "FRQ-200" adjective set, and `--precision` specifies we want to evaluate models based on predictive accuracy. Instead, you can use `--jsd` to specify the Jensen-Shannon divergence between the predicted and empirical posterior distributions over adjectives. In addition, the options `--future` and `--map` can be used to consider all future pairings when evaluating models and to use kernel parameters learned via MAP estimates, respectively.
 
-Note that the prototype and progenitor models are both wrapped into `scripts/prototype.py`.
+Note that the prototype and progenitor models are both wrapped into `scripts/prototype.py`. Also, you will need to download diachronic Word2Vec embeddings on your own and place the .pkl and .npy files in `data/diachronic_embeddings`. The embeddings can be found [here](https://nlp.stanford.edu/projects/histwords/).
