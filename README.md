@@ -1,6 +1,6 @@
 ## 1. Adjective-noun cooccurrence data
 
-The `data/` folder contains all historical adjective-noun cooccurrence counts grouped by decade, as well as adjectives and nouns used in our experiments. The following python code (executed from the `scripts/` folder) accesses the 
+The `data/` folder contains all historical adjective-noun cooccurrence counts grouped by decade, as well as adjectives and nouns used in our experiments. The following python code (executed from the `scripts/` folder) prints the raw co-occurrence count between "artificial" and "computer" during the 1980s.
 
 ```
 from util import *
@@ -27,7 +27,7 @@ print(C[1, i, j])
 
 ## 2. Predictive models
 
-THe `scripts/` folder contains the exemplar, prototype, progenitor, k-nearest neighbors, and baseline models. One of these models can be executed as
+The `scripts/` folder contains the exemplar, prototype, progenitor, k-nearest neighbors, and baseline models. One of these models can be executed as
 
 ```bash
 $ scripts/exemplar.py --frq200 --precision
